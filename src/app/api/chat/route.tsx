@@ -8,8 +8,7 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
  
-// Set the runtime to edge for best performance
-export const runtime = 'edge';
+
 
 export async function POST(req: Request) {
   const { messages } = await req.json();
@@ -17,7 +16,6 @@ export async function POST(req: Request) {
     "role": "system",
     "content": "您将收到一条推文，您的任务是将其情绪分类为积极、中立或消极。"
   }]
-  // Ask OpenAI for a streaming chat completion given the prompt
   const response = await openai.chat.completions.create({
     model: 'gpt-3.5-turbo',
     stream: true,

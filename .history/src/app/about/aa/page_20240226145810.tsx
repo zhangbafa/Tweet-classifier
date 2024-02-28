@@ -1,0 +1,19 @@
+import ShowImage from "@/components/ShowImage"
+export default function Page({params,searchParams}) {
+  console.log(`params:${JSON.stringify(searchParams)}`)
+    return (
+      <>
+      <h1>Hello, About!</h1>
+      <ShowImage 
+        src="/liu.webp"
+        width={640}
+        height={483}
+        alt="liu"
+      />
+      https://youtu.be/07LY4tM1z2g?si=W2GzptcHlcn7dPY1
+      <iframe src="//player.bilibili.com/player.html?aid=1050496675&bvid=BV1aH4y1h7n9&cid=1431932130&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+      {/* <iframe src="https://youtu.be/07LY4tM1z2g?si=W2GzptcHlcn7dPY1" frameBorder={0} allowFullScreen></iframe> */}
+      </>
+    )
+}
+  

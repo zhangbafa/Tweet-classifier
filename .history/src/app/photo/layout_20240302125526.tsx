@@ -1,4 +1,6 @@
-export default function Layout({children,modal}:{
+import { ReactNode } from "react";
+
+export default function PhotoLayout({children,modal}:{
     children:React.ReactNode
     modal:React.ReactNode
 }){

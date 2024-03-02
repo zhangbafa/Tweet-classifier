@@ -1,5 +1,4 @@
 import Link from "next/link"
-import Image from 'next/image'
 export default async function Page() {
     const res = await fetch('https://picsum.photos/v2/list?page=2&limit=100')
     const photos = await res.json()

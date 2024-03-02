@@ -13,7 +13,9 @@ export default function ShowImage({src,width,height,alt}:{src:string,width:numbe
                 src={src}
                 width={width}
                 height={height}
+                loader={imageLoader}
                 alt={alt}
+                onLoad={(e) => console.log(e.target.width,e.target.height)}
                 className="rounded object-fill"
             />
         </div>

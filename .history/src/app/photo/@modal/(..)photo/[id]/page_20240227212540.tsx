@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image"
 import { useRouter } from "next/navigation"
-export default function PhotoPage({ params }:{params:{id:string}}) {
+export default async function PhotoPage({ params }:{params:{id:string}}) {
   const router = useRouter()
 
   return (

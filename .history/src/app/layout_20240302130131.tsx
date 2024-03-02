@@ -15,9 +15,10 @@ export const metadata: Metadata = {
   title: 'Nextjs.org'
 }
 
-export default function RootLayout({ children }:
+export default function RootLayout({ children,modal }:
   {
     children:React.ReactNode
+    modal:React.ReactNode
   }) {
   return (
     <html>

@@ -12,7 +12,9 @@ export default async function Page() {
           width={100}
           height={100}
           alt={id}
-          src={src}></Image>
+          src={src}
+          alt={id}
+          ></Image>
       </Link>
     ))}
   </main>
